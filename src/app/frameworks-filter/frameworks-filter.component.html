@@ -1,0 +1,17 @@
+<div layout="column" *mobxAutorun>
+  <md-input placeholder="filter frameworks" [(ngModel)]="frameworks.filter">
+  </md-input>
+  <!-- <app-change-detection-counter></app-change-detection-counter> -->
+  <md-checkbox class="md-checkbox red flex"
+    [(ngModel)]="frameworks.isAllChecked"
+    [disabled]="!frameworks.filteredItems.length"
+    [indeterminate]="!frameworks.filteredItems.length">
+    {{ frameworks.isAllChecked === true ? 'Uncheck All' : 'Check All' }}
+  </md-checkbox>
+
+  <md-checkbox *ngFor="let item of frameworks.filteredItems"
+      class="red master-checkbox flex"
+      [(ngModel)]="item.checked">
+    {{ item.name }}
+  </md-checkbox>
+</div>
