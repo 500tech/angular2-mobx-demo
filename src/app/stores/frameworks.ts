@@ -52,3 +52,4 @@ export class Frameworks {
 }
 
 export const frameworks = new Frameworks();
+window['state'] = frameworks;

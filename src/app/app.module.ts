@@ -12,6 +12,7 @@ import { SelectedFrameworksComponent } from './selected-frameworks/selected-fram
 import { HeaderComponent } from './header/header.component';
 import { ChangeDetectionCounterComponent } from './change-detection-counter/change-detection-counter.component';
 import { NewFrameworkComponent } from './new-framework/new-framework.component';
+import { FrameworksListComponent } from './frameworks-list/frameworks-list.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { NewFrameworkComponent } from './new-framework/new-framework.component';
     SelectedFrameworksComponent,
     HeaderComponent,
     ChangeDetectionCounterComponent,
-    NewFrameworkComponent
+    NewFrameworkComponent,
+    FrameworksListComponent
   ],
   imports: [
     BrowserModule,

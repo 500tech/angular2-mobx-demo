@@ -12,7 +12,7 @@ export class ChangeDetectionCounterComponent {
   ngAfterViewChecked() {
     this.zone.runOutsideAngular(() => {
       setTimeout(() => {
-        this.elementRef.nativeElement.innerHTML = `${this.counter++} change detections`;
+        this.elementRef.nativeElement.innerHTML = `<span class="change-detection-counter">${this.counter++}</span>`;
       });
     });
   }
